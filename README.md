@@ -12,21 +12,6 @@
 composer require datana-gmbh/doctrine-type-testcases
 ```
 
-
-
-### Setup
-```yaml
-# config/packages/doctrine.yaml
-
-doctrine:
-    dbal:
-        types:
-            # We want to store DateTime objects with milliseconds
-            # The solution is built on https://github.com/doctrine/dbal/issues/2873#issuecomment-701052412
-            # but instead of using microseconds we use milliseconds
-            datetime: Datana\Doctrine\Type\Doctrine\DBAL\Types\Type\DateTimeMillisecondsType
-```
-
 [build-status-master-php]: https://github.com/datana-gmbh/doctrine-type-testcases/workflows/PHP/badge.svg?branch=master
 [coverage-status-master]: https://codecov.io/gh/datana-gmbh/doctrine-type-testcases/branch/master/graph/badge.svg
 
