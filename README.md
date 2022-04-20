@@ -1,4 +1,4 @@
-# doctrine-datetime-milliseconds-type
+# doctrine-type-testcases
 
 | Branch    | PHP                                         | Code Coverage                                        |
 |-----------|---------------------------------------------|------------------------------------------------------|
@@ -9,7 +9,7 @@
 ### Installation
 
 ```bash
-composer require datana-gmbh/doctrine-datetime-milliseconds-type
+composer require datana-gmbh/doctrine-type-testcases
 ```
 
 
@@ -27,8 +27,8 @@ doctrine:
             datetime: Datana\Doctrine\Type\Doctrine\DBAL\Types\Type\DateTimeMillisecondsType
 ```
 
-[build-status-master-php]: https://github.com/datana-gmbh/doctrine-datetime-milliseconds-type/workflows/PHP/badge.svg?branch=master
-[coverage-status-master]: https://codecov.io/gh/datana-gmbh/doctrine-datetime-milliseconds-type/branch/master/graph/badge.svg
+[build-status-master-php]: https://github.com/datana-gmbh/doctrine-type-testcases/workflows/PHP/badge.svg?branch=master
+[coverage-status-master]: https://codecov.io/gh/datana-gmbh/doctrine-type-testcases/branch/master/graph/badge.svg
 
-[actions]: https://github.com/datana-gmbh/doctrine-datetime-milliseconds-type/actions
-[codecov]: https://codecov.io/gh/datana-gmbh/doctrine-datetime-milliseconds-type
+[actions]: https://github.com/datana-gmbh/doctrine-type-testcases/actions
+[codecov]: https://codecov.io/gh/datana-gmbh/doctrine-type-testcases

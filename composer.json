@@ -1,7 +1,7 @@
 {
-    "name": "datana-gmbh/doctrine-datetime-milliseconds-type",
+    "name": "datana-gmbh/doctrine-type-testcases",
     "type": "library",
-    "description": "A Doctrine DBAL type to store DateTime with milliseconds",
+    "description": "Doctrine Type Testcases",
     "license": "MIT",
     "authors": [
         {
@@ -10,9 +10,10 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "datana-gmbh/doctrine-postgres-milliseconds-platform": "^1.1",
-        "doctrine/dbal": "^2.0"
+        "php": ">=8.0",
+        "doctrine/dbal": "^2.0",
+        "phpunit/phpunit": "^9.5",
+        "symfony/uid": "^5.4 || ^6.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.2",
@@ -20,20 +21,19 @@
         "friendsofphp/php-cs-fixer": "^2.19",
         "phpstan/extension-installer": "^1.0",
         "phpstan/phpstan": "^0.12.14",
-        "phpstan/phpstan-webmozart-assert": "^0.12.2",
-        "phpunit/phpunit": "^9.0"
+        "phpstan/phpstan-webmozart-assert": "^0.12.2"
     },
     "config": {
         "sort-packages": true
     },
     "autoload": {
         "psr-4": {
-            "Datana\\Doctrine\\Type\\": "src/"
+            "Datana\\Doctrine\\Testcase\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Datana\\Doctrine\\Type\\Tests\\": "tests/"
+            "Datana\\Doctrine\\Testcase\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",

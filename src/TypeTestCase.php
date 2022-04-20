@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of datana-gmbh/doctrine-postgresql-milliseconds-platform package.
+ * This file is part of datana-gmbh/doctrine-type-testcases package.
  *
  * (c) Datana GmbH <info@datana.rocks>
  *
@@ -11,9 +11,8 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Datana\Doctrine\Type\Tests\Unit\Doctrine\DBAL\Types\Type;
+namespace Datana\Doctrine\Testcase;
 
-use Doctrine\DBAL\Types\Type;
 use PHPUnit\Framework\TestCase;
 
 abstract class TypeTestCase extends TestCase
