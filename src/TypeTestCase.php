@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Datana\Doctrine\Testcase;
 
+use Doctrine\DBAL\Types\Type;
 use PHPUnit\Framework\TestCase;
 
 abstract class TypeTestCase extends TestCase
