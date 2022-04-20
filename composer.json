@@ -1,0 +1,57 @@
+{
+    "name": "datana-gmbh/doctrine-datetime-milliseconds-type",
+    "type": "library",
+    "description": "A Doctrine DBAL type to store DateTime with milliseconds",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oskar Stark",
+            "email": "oskarstark@googlemail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "datana-gmbh/doctrine-postgres-milliseconds-platform": "^1.1",
+        "doctrine/dbal": "^2.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.2",
+        "ergebnis/test-util": "^1.5",
+        "friendsofphp/php-cs-fixer": "^2.19",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^0.12.14",
+        "phpstan/phpstan-webmozart-assert": "^0.12.2",
+        "phpunit/phpunit": "^9.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Datana\\Doctrine\\Type\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Datana\\Doctrine\\Type\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "cs": [
+            "vendor/bin/php-cs-fixer fix"
+        ],
+        "cs-check": [
+            "vendor/bin/php-cs-fixer fix --diff --diff-format=udiff --dry-run --verbose"
+        ],
+        "phpstan": [
+            "@php -d memory_limit=-1 vendor/bin/phpstan analyse --configuration phpstan.neon --no-progress"
+        ],
+        "phpstan-baseline": [
+            "@php -d memory_limit=-1 vendor/bin/phpstan analyse --configuration phpstan.neon --generate-baseline=phpstan-baseline.neon --no-progress"
+        ],
+        "test": [
+            "@php -d memory_limit=-1 vendor/bin/phpunit"
+        ]
+    }
+}
