@@ -24,7 +24,11 @@
         "phpstan/phpstan-webmozart-assert": "^0.12.2"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "phpstan/extension-installer": true
+        }
     },
     "autoload": {
         "psr-4": {
